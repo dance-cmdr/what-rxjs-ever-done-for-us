@@ -4,13 +4,25 @@ import {
     Image,
     Layout,
     Text,
+    Heading,
   } from 'spectacle';
+
+  const ALEX =
+`
+  const Alex = {
+      productivity: coffee => code,
+      happiness: dogs => happiness,
+      storytelling: dnd => stories,
+  };
+`
 
   export default class Cover extends React.Component {
     render() {
       return (
             <React.Fragment>
+                <Heading lineHeight={2} size={2} fill> Software Engineer @ </Heading>
                 <Layout>
+                    <Image src={'./assets/dazn.png'} height={300} fit/>
                     <Image src={'./assets/tweeterProfile.png'} height={300} fit/>
                     <Image src={'./assets/githubProfile.png'} height={300} fit />
                 </Layout>
@@ -18,14 +30,8 @@ import {
                     <CodePane
                     lang="javascript" 
                     textSize={20}
-                    padding={35}
-                    source={`
-    const Alex = {
-        productivity: coffee => code,
-        happiness: dogs => happiness,
-        storytelling: dnd => stories,
-    };
-                    `}
+                    padding={55}
+                    source={ALEX}
                     />
                 </Layout>     
             </React.Fragment>
