@@ -19,10 +19,13 @@ import StreamsInDazn from './slides/streams/StreamsInDAZN';
 import Observables from './slides/streams/Observables';
 import AboutStreamsAndObservables from './slides/streams/AboutStremsAndObsevables';
 import InDAZN from './slides/streams/InDAZN';
+
 import TheVideoPlayerProblem from './slides/videoPlayer/TheVideoPlayerProblem';
 import DaznVpiDesignGoals from './slides/videoPlayer/DAZNVPIDesignGoals';
 import DaznVpiArchitecture from './slides/videoPlayer/DAZNVPIArchitecture';
 import GlobX from './slides/videoPlayer/GlobX';
+
+import TheVolumeSliderProblem from './slides/volumeSlider/TheVolumeSliderProblem';
 
 // Require CSS
 require('normalize.css');
@@ -67,6 +70,10 @@ export default class Presentation extends React.Component {
           <DaznVpiDesignGoals />
           <DaznVpiArchitecture />
           <GlobX />
+        </SlideSet>
+        <SlideSet>
+          <TheVolumeSliderProblem />
+          <TheVolumeSliderProblem />
         </SlideSet>
       </Deck>
     );
