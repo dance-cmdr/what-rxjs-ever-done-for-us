@@ -16,6 +16,13 @@ import AboutDAZN from './slides/introduction/AboutDAZN';
 
 import Streams from './slides/streams/Streams';
 import StreamsInDazn from './slides/streams/StreamsInDAZN';
+import Observables from './slides/streams/Observables';
+import AboutStreamsAndObservables from './slides/streams/AboutStremsAndObsevables';
+import InDAZN from './slides/streams/InDAZN';
+import TheVideoPlayerProblem from './slides/videoPlayer/TheVideoPlayerProblem';
+import DaznVpiDesignGoals from './slides/videoPlayer/DAZNVPIDesignGoals';
+import DaznVpiArchitecture from './slides/videoPlayer/DAZNVPIArchitecture';
+import GlobX from './slides/videoPlayer/GlobX';
 
 // Require CSS
 require('normalize.css');
@@ -49,8 +56,17 @@ export default class Presentation extends React.Component {
           <AboutDAZN />
         </SlideSet>
         <SlideSet>
+          <AboutStreamsAndObservables />
           <Streams />
+          <Observables />
+          <InDAZN />
           <StreamsInDazn />
+        </SlideSet>
+        <SlideSet>
+          <TheVideoPlayerProblem />
+          <DaznVpiDesignGoals />
+          <DaznVpiArchitecture />
+          <GlobX />
         </SlideSet>
       </Deck>
     );
