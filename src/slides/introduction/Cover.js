@@ -1,12 +1,6 @@
 import React from 'react';
 import {
-    BlockQuote,
-    Cite,
-    Deck,
     Heading,
-    ListItem,
-    List,
-    Quote,
     Slide,
     Text,
   } from 'spectacle';
@@ -14,7 +8,7 @@ import {
   export default class Cover extends React.Component {
     render() {
       return (
-            <React.Fragment>
+            <Slide>
                 <Heading size={1} lineHeight={1} textColor="secondary">
                 What
                 </Heading>
@@ -29,7 +23,7 @@ import {
                 simplifying Volume State Management 
                 and reporting the Video Player State to the consumer ...
                 </Text>
-            </React.Fragment>
+            </Slide>
         )
     }
 }
