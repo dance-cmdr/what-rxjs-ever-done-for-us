@@ -8,7 +8,7 @@ import {
       render() {
         return (
             <Slide>
-                <Heading lineHeight={1}>About Streams, Observables and RxJS.</Heading>
+                <Heading lineHeight={1}>Streams, Observables and RxJS.</Heading>
             </Slide>
           )
       } 
