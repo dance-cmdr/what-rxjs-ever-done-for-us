@@ -26,6 +26,7 @@ import DaznVpiArchitecture from './slides/videoPlayer/DAZNVPIArchitecture';
 import GlobX from './slides/videoPlayer/GlobX';
 
 import TheVolumeSliderProblem from './slides/volumeSlider/TheVolumeSliderProblem';
+import TheVolumeSliderRxjsSolution from './slides/volumeSlider/TheVolumeSliderRxjsSolution';
 
 // Require CSS
 require('normalize.css');
@@ -73,7 +74,7 @@ export default class Presentation extends React.Component {
         </SlideSet>
         <SlideSet>
           <TheVolumeSliderProblem />
-          <TheVolumeSliderProblem />
+          <TheVolumeSliderRxjsSolution />
         </SlideSet>
       </Deck>
     );
