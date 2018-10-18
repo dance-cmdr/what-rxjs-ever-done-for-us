@@ -19,9 +19,9 @@ import {
                 ever done for us?
                 </Heading>
                 <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-                Apart from helping DAZN writing a Video Player Interface, 
-                simplifying Volume State Management 
-                and reporting the Video Player State to the consumer ...
+                    Apart from helping DAZN write a Video Player Interface, 
+                    a lightweight State Management 
+                    and improve video heuristics.
                 </Text>
             </Slide>
         )
