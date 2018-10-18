@@ -60,10 +60,10 @@ export default class Presentation extends React.Component {
           <AboutDAZN />
         </SlideSet>
         <SlideSet>
+          <InDAZN />
           <AboutStreamsAndObservables />
           <Streams />
           <Observables />
-          <InDAZN />
           {/* <StreamsInDazn /> */}
         </SlideSet>
         <SlideSet>
