@@ -9,8 +9,7 @@ import {
       render() {
         return (
           <Slide>
-              <Image src={'./assets/dazn.png'} height={200} fit/>
-              <Text textColor="secondary"> An OTT Sports Streaming Company.</Text>
+              <Image src={'./assets/dazn-basketball.gif'}/>
           </Slide>
         );
       }

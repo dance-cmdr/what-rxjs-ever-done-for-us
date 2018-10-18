@@ -3,10 +3,36 @@ import {BehaviorSubject, merge} from 'rxjs';
 import { map, filter } from 'rxjs/operators';
 
 import {
-    Slide
+    Slide,
+    CodePane,
+    Layout,
+    Heading,
 } from 'spectacle';
 
 import VolumeSlider from './VolumeSlider';
+import layout from 'spectacle/lib/components/layout';
+
+const SOMECODE =
+`
+    this.volume$ = new BehaviorSubject(30);
+    this.mute$ = new BehaviorSubject(false);
+
+    this.mute$.subscribe(mute => {
+        this.setState({
+            mute,
+        });
+    });
+
+
+    merge(this.volume$, this.mute$).pipe(
+        map(value => value === true ? 0 : value),
+        filter(value => typeof value !== 'boolean'),
+    ).subscribe(volume => {
+        this.setState({
+            volume,
+        });
+    });
+`
 
 export default class TheVolumeSliderRxjsSolution extends Component {
 
@@ -23,27 +49,35 @@ export default class TheVolumeSliderRxjsSolution extends Component {
         this.mute$ = new BehaviorSubject(false);
 
         this.mute$.subscribe(mute => {
-            this.setState({
-                mute,
-            });
+            this.setState({ mute });
         });
 
         
-        merge(this.volume$, this.mute$).pipe(
-            map(value => value === false ? 0 : value),
-            filter(value => typeof value !== 'boolean'),
-        ).subscribe(volume => {
-            this.setState({
-                volume,
+        this.effectiveVolume$ = merge(this.volume$, this.mute$)
+            .pipe(
+                map(value => value === true ? 0 : value),
+                filter(value => typeof value !== 'boolean'),
+            )
+            .subscribe(volume => {
+                this.setState({ volume });
             });
-        });
     }
 
 
     render() {
         return (
             <Slide>
-                <VolumeSlider volume={this.state.volume} mute={this.state.mute}/>
+                <Heading lineHeight={1}>Managing Observables</Heading>
+                <Layout>
+                    <VolumeSlider volume={this.state.volume} mute={this.state.mute} fit/>
+                    <CodePane
+                        lang="javascript" 
+                        textSize={20}
+                        padding={55}
+                        fit 
+                        source={SOMECODE}
+                    />
+                </Layout>
             </Slide>
         )
     }

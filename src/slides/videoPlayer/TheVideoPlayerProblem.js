@@ -12,15 +12,15 @@ import {
       return (
             <Slide>
                 <Heading lineHeight={1}>The Video Player Problem!</Heading>
-                <Image src={'./assets/dazn.png'} height={300} fit/>
-                <List>
+                <Image src={'./assets/dazn-player.png'} />
+                {/* <List>
                     <ListItem>Video Player Values</ListItem>
                     <ListItem>Video Player Events</ListItem>
                     <ListItem>Mouse Events</ListItem>
                     <ListItem>Data Updates</ListItem>
                     <ListItem>UI State Events</ListItem>
                     <ListItem>Media APIs are not consistent between devices</ListItem>
-                </List>
+                </List> */}
             </Slide>
         )
     }

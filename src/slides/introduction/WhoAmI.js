@@ -10,9 +10,9 @@ import {
   const ALEX =
 `
   const Alex = {
-      productivity: coffee => code,
-      happiness: dogs => happiness,
-      storytelling: dnd => stories,
+      work: coffee => code,
+      live: dogs => happiness,
+      play: dnd => randomRidiculousStories,
   };
   
 `

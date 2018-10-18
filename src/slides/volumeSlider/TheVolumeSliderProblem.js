@@ -32,8 +32,8 @@ export default class TheVolumeSliderProblem extends React.Component {
     render() {
       return (
             <Slide>
-                <Heading lineHeight={1}>The Video Player Problem!</Heading>
-                <Image src={'./assets/dazn.png'} height={300} fit/>
+                <Heading lineHeight={1}>Volume State in RxJS</Heading>
+                <Image src={'./assets/volume-slider.gif'} height={500} fit/>
                 <Heading size={2}>Requirements</Heading>
                 <CustomList>
                     <CustomListItem> Volume Bar </CustomListItem>

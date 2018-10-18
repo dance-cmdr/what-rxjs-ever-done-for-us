@@ -32,7 +32,7 @@ const VolumeTrack = styled('div')(`
     width: 4px;
     background: rgba(255, 255, 255, 0.5);
     margin-left: calc(50% - 2px);
-    height: 100px;
+    height: 500px;
 
     &::after {
         content: '';
@@ -100,14 +100,6 @@ export default class Presentation extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    componentDidMount() {
-
-    }
-
-    componentWillUnmount() {
-
-    }
-
     handleClick() {
         console.log('click');
     }
@@ -116,7 +108,6 @@ export default class Presentation extends Component {
 
 
     render () {
-
         const volume = this.props.volume;
         const mute = this.props.mute;
 

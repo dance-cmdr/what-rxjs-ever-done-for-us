@@ -16,8 +16,8 @@ export default class GlobX extends React.Component {
       return (
             <Slide>
                 <Heading lineHeight={1}>GlobX State Managemer</Heading>
-                <Image src={'./assets/dazn.png'} height={300}/>
-                <Table>
+                <Image src={'./assets/Globex-first.jpg'}/>
+                <Table fit >
                     <TableHeader>
                         <TableRow>
                             <TableHeaderItem></TableHeaderItem>

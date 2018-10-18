@@ -11,8 +11,7 @@ import {
       return (
             <Slide>
                 <Heading lineHeight={1}>in DAZN?</Heading>
-                <Image src={'./assets/dazn.png'} height={300} fit/>
-                <Text> Add a snapshot of the app</Text>
+                <Image src={'./assets/dazn-catalog.png'} />
             </Slide>
         )
     }

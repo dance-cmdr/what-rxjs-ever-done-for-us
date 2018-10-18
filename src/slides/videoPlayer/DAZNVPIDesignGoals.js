@@ -21,7 +21,7 @@ export default class DaznVpiDesignGoals extends React.Component {
     render() {
       return (
             <Slide>
-                <Heading lineHeight={1}>The Video Player Problem!</Heading>
+                <Heading lineHeight={1}>Designing Video Player Interface!</Heading>
                 <Image src={'./assets/dazn.png'} height={300} fit/>
                 <CustomList>
                     <CustomListItem>

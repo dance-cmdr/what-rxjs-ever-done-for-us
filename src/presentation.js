@@ -64,7 +64,7 @@ export default class Presentation extends React.Component {
           <Streams />
           <Observables />
           <InDAZN />
-          <StreamsInDazn />
+          {/* <StreamsInDazn /> */}
         </SlideSet>
         <SlideSet>
           <TheVideoPlayerProblem />

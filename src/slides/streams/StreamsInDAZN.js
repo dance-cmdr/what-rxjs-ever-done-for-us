@@ -5,13 +5,14 @@ import {
     ListItem,
     Slide,
     Text,
+    Image,
 } from 'spectacle';
 
   export default class StreamsInDAZN extends Component {
       render() {
         return (
             <Slide>
-                <Heading lineHeight={1}>in DAZN?</Heading>
+                <Heading lineHeight={1}>Reactivity in DAZN?</Heading>
                 <List>
                     <ListItem>Video Player Values</ListItem>
                     <ListItem>Video Player Events</ListItem>
@@ -19,7 +20,6 @@ import {
                     <ListItem>Data Updates</ListItem>
                     <ListItem>UI State Events</ListItem>
                 </List>
-                <Text> Add a snapshot of the app</Text>
             </Slide>
           )
       } 
