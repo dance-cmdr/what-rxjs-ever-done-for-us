@@ -5,7 +5,8 @@
   "dependencies": {
     "classname": "^0.0.0",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "rxjs": "^6.3.3"
   },
   "devDependencies": {
     "spectacle-scripts": "2.0.0"

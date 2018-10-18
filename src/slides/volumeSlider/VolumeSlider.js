@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'react-emotion';
+import { Observable } from 'rxjs';
 
 import IconMute from './IconMute';
 import IconVolume from './IconVolume';
@@ -94,23 +95,46 @@ const VolumeMuteToggleButton = styled('button')(`
 
 export default class Presentation extends Component {
 
-    handleClick() {
-        console.log('click')
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
     }
 
+    componentDidMount() {
+
+    }
+
+    componentWillUnmount() {
+
+    }
+
+    handleClick() {
+        console.log('click');
+    }
+
+    setTrackRef = element => this.trackRef = element;
+
+
     render () {
+
+        const volume = this.props.volume;
+        const mute = this.props.mute;
+
+        const UpdatableVolumeLevel = styled(VolumeLevel)(`
+            bottom: ${volume}%;
+        `);
 
         return (
             <VolumeControl>
                 <VolumeSlider>
-                    <VolumeLabel>{this.props.volume}</VolumeLabel>
-                    <VolumeTrack>
-                        <VolumeLevel />
+                    <VolumeLabel>{volume}%</VolumeLabel>
+                    <VolumeTrack ref={this.setTrackRef}>
+                        <UpdatableVolumeLevel />
                     </VolumeTrack>
                 </VolumeSlider>
     
                 <VolumeMuteToggleButton onClick={this.handleClick}>
-                    {true ? <IconMute/> : <IconVolume/>}
+                    {mute ? <IconMute/> : <IconVolume/>}
                 </VolumeMuteToggleButton>
             </VolumeControl>
         );
