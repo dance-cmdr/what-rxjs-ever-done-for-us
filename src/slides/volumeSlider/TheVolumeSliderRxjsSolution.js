@@ -14,6 +14,8 @@ import layout from 'spectacle/lib/components/layout';
 
 const SOMECODE =
 `
+    // Imagine I'm a store!
+
     this.volume$ = new BehaviorSubject(30);
     this.mute$ = new BehaviorSubject(false);
 
@@ -32,6 +34,8 @@ const SOMECODE =
             volume,
         });
     });
+
+    // PS. In case You forgot. The code is in src/slides/volumeSlider/TheVolumeSliderRxjsSolution.js
 `
 
 export default class TheVolumeSliderRxjsSolution extends Component {
