@@ -31,6 +31,7 @@ import RxJSIsNotAStateManager from './slides/conclusion/RxJSIsNotAStateManager';
 import RxJSShinesVolatile from './slides/conclusion/RxJSIsShinesOnVolatileValues';
 import RxJSShinesDeriving from './slides/conclusion/RXJSIsAwesomeOnDerivingStates';
 import AboutRxjs from './slides/streams/AboutRxJS';
+import Thanks from './slides/conclusion/Thanks';
 
 // Require CSS
 require('normalize.css');
@@ -85,6 +86,7 @@ export default class Presentation extends React.Component {
           <RxJSIsNotAStateManager />
           <RxJSShinesVolatile />
           <RxJSShinesDeriving />  
+          <Thanks />
         </SlideSet>
       </Deck>
     );
