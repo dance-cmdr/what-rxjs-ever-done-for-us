@@ -27,6 +27,9 @@ import GlobX from './slides/videoPlayer/GlobX';
 
 import TheVolumeSliderProblem from './slides/volumeSlider/TheVolumeSliderProblem';
 import TheVolumeSliderRxjsSolution from './slides/volumeSlider/TheVolumeSliderRxjsSolution';
+import RxJSIsNotAStateManager from './slides/conclusion/RxJSIsNotAStateManager';
+import RxJSShinesVolatile from './slides/conclusion/RxJSIsShinesOnVolatileValues';
+import RxJSShinesDeriving from './slides/conclusion/RXJSIsAwesomeOnDerivingStates';
 
 // Require CSS
 require('normalize.css');
@@ -75,6 +78,11 @@ export default class Presentation extends React.Component {
         <SlideSet>
           <TheVolumeSliderProblem />
           <TheVolumeSliderRxjsSolution />
+        </SlideSet>
+        <SlideSet>
+          <RxJSIsNotAStateManager />
+          <RxJSShinesVolatile />
+          <RxJSShinesDeriving />  
         </SlideSet>
       </Deck>
     );
